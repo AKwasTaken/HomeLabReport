@@ -1,8 +1,6 @@
 ---
 publish: true
 title: Timeline of my HomeServer Journey
-created: 2026-04-30T16:04:28.362+05:30
-modified: 2026-05-18T15:59:42.933+05:30
 ---
 
 This document is a chronological log of my journey setting up a personal home server on a Linux Mint laptop inside a campus network with heavy restrictions (Sophos firewall, captive portal, multiple subnets).
