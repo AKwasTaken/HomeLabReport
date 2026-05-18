@@ -1,4 +1,5 @@
 ## Goal
+
 Run a Minecraft server on the Linux Mint laptop.
 
 ---

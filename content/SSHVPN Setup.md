@@ -1,4 +1,5 @@
 ## Goal
+
 Use campus VPN to access network resources without needing captive portal login.
 
 ---
@@ -26,7 +27,6 @@ Placed files in:
 
 Get your .ovpn file from the [VPN Portal](https://gateway.iisertvm.ac.in:8443/vpnportal/webpages/index.html#3352)
 
-
 `creds.txt` format:
 
 ```text
@@ -43,6 +43,7 @@ sudo openvpn --config /etc/sshvpn/config.ovpn --auth-user-pass /etc/sshvpn/creds
 ```
 
 Observed:
+
 - connects successfully
 - blocks terminal (foreground process)
 

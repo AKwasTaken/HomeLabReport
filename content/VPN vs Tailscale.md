@@ -50,6 +50,7 @@ Observed:
 - campus firewall interferes with routing
 
 Result:
+
 - Tailscale cannot connect properly
 - peers become unreachable
 
@@ -64,9 +65,11 @@ sudo ip route add 100.64.0.0/10 via <local-gateway>
 ```
 
 Goal:
+
 - force Tailscale traffic outside VPN
 
 Result:
+
 - inconsistent behavior
 - sometimes works, often breaks
 - not stable
@@ -82,6 +85,7 @@ sudo ip route add <tailscale-server-range> via <local-gateway>
 ```
 
 Result:
+
 - complex routing
 - unpredictable failures
 - difficult to debug
@@ -93,6 +97,7 @@ Result:
 Tried modifying VPN behavior to avoid full tunnel.
 
 Result:
+
 - campus network still blocks traffic
 - Tailscale still unreliable
 
@@ -111,6 +116,7 @@ Behavior:
 ---
 
 ## Key Insight
+
 Trying to bypass VPN for Tailscale does not work reliably
 
 ---

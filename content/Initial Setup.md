@@ -1,4 +1,5 @@
 ## Goal
+
 Turn a Linux Mint laptop into a basic home server.
 
 ---
@@ -14,7 +15,7 @@ Turn a Linux Mint laptop into a basic home server.
 
 ## SSH Setup
 
-This is basically for remote access-ing into my server-laptop from anywhere*.
+This is basically for remote access-ing into my server-laptop from anywhere\*.
 
 Installed SSH server:
 

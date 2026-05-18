@@ -1,4 +1,5 @@
 ## Goal
+
 Understand and work around limitations of campus network.
 
 ---
@@ -22,6 +23,7 @@ hostname -I
 ```
 
 Observed:
+
 - IP changes frequently
 - needed to re-check before connecting
 
@@ -36,6 +38,7 @@ https://gateway.iisertvm.ac.in:8090/httpclient.html
 ```
 
 Behavior:
+
 - must login manually in browser
 - session expires after some time
 - no internet without login
@@ -63,6 +66,7 @@ Tested:
 Worked sometimes.
 
 Observations:
+
 - depends on mDNS
 - not reliable across subnets
 - inconsistent behavior on campus network
@@ -78,6 +82,7 @@ Tried automating login process:
 - experimenting with scripts
 
 Issues:
+
 - login tokens change dynamically
 - cannot reuse same request
 - automation unreliable

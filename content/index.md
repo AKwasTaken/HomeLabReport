@@ -224,3 +224,5 @@ _Details_: [[vpnBox (DOESN'T WORK)]]
 I am trying to implement a dashboard for my homeserver, as I came across a youtube video on a homelab-ing video that showcased someone vibe-coding a dashboard. Trying to avoid AI as much as possible, I came across Flame.
 
 changes seen?
+
+changes seen now?

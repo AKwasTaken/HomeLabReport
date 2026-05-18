@@ -1,4 +1,5 @@
 ## Goal
+
 Set up a media server that works locally without restrictions.
 
 ---
@@ -96,6 +97,7 @@ chmod -R 775 ~/Jellyfin
 - worked within same WiFi network
 
 Tested with iOS app (Streamyfin):
+
 - connected using server IP
 - playback worked
 

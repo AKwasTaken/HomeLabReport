@@ -106,11 +106,13 @@ sudo ip netns exec vpnbox qbittorrent-nox
 ## Scripts
 
 Created helper script:
+
 ```bash
 sudo nano /usr/local/bin/vpnbox
 ```
 
 The script:
+
 ```bash
 #!/bin/bash
 
@@ -196,7 +198,6 @@ case "$1" in
 esac
 ```
 
-
 Usage commands:
 
 ```bash
@@ -213,6 +214,7 @@ vpnbox logs       → show logs
 ```
 
 Handles:
+
 - starting VPN in namespace
 - running qBittorrent
 - checking status

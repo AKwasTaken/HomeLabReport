@@ -1,4 +1,5 @@
 ## Goal
+
 Access the campus login portal and other services remotely through the server.
 
 ---
@@ -56,6 +57,7 @@ ssh -f -N -L 8090:gateway.iisertvm.ac.in:8090 akwastaken@<server-ip>
 ```
 
 Observed:
+
 - runs without opening terminal session
 - still fails if port already in use
 
