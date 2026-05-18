@@ -10,4 +10,4 @@ This is a record of what was tried, what failed, and what worked.
 
 ---
 
-Blog: https://AKwasTaken.github.io/NetworkingBlog
+Blog: https://AKwasTaken.github.io/HomeLabReport
