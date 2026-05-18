@@ -1,5 +1,8 @@
 ---
+publish: true
 title: Timeline of my HomeServer Journey
+created: 2026-04-30T16:04:28.362+05:30
+modified: 2026-05-18T15:59:42.933+05:30
 ---
 
 This document is a chronological log of my journey setting up a personal home server on a Linux Mint laptop inside a campus network with heavy restrictions (Sophos firewall, captive portal, multiple subnets).
@@ -13,11 +16,12 @@ It documents what I tried, what failed, and what actually worked.
 I started with a Linux Mint laptop that I wanted to turn into a “home server”.
 
 Basic things I set up:
+
 - SSH access from my Mac
 - File structure for storing data
 - Some basic shell scripting
 
-*Details*: [[Initial Setup]]
+_Details_: [[Initial Setup]]
 
 ---
 
@@ -30,10 +34,11 @@ The first real use case was hosting a Minecraft server.
 - Experimented with mods
 
 This was my first exposure to:
+
 - running long-lived processes
 - server configuration
 
-*Details*: [[Minecraft Server]]
+_Details_: [[Minecraft Server]]
 
 ---
 
@@ -46,10 +51,11 @@ To support media usage, I explored downloading tools:
 - Switched to qBittorrent
 
 Learned:
+
 - difference between CLI vs GUI tools
 - how torrent clients work
 
-*Details*: [[Download Tools]]
+_Details_: [[Download Tools]]
 
 ---
 
@@ -58,17 +64,20 @@ Learned:
 I tried setting up a media server using Plex.
 
 What worked:
+
 - local streaming
 
 What failed:
+
 - remote streaming outside network
 - reliance on Plex relay / subscriptions
 
 Conclusion:
+
 - Plex is not ideal for restricted networks
 - Huge headache.
 
-*Details*: deprecated
+_Details_: deprecated
 
 ---
 
@@ -82,7 +91,7 @@ Switched to Jellyfin.
 
 This became my main media server.
 
-*Details*: [[Jellyfin Setup]]
+_Details_: [[Jellyfin Setup]]
 
 ---
 
@@ -95,10 +104,11 @@ Ran into major issues due to campus network:
 - Multiple subnets → inconsistent connectivity
 
 Started experimenting with:
+
 - hostname-based access (`.local`)
 - basic scripts to automate login
 
-*Details*: [[Networking Basics]]
+_Details_: [[Networking Basics]]
 
 ---
 
@@ -111,11 +121,12 @@ ssh -L 8090:gateway.iisertvm.ac.in:8090 user@server
 ```
 
 Goal:
+
 - access login portal remotely
 
 Partial success, but not scalable.
 
-*Details*: [[SSH Tunnels]]
+_Details_: [[SSH Tunnels]]
 
 ---
 
@@ -131,11 +142,12 @@ sshvpn stop
 ```
 
 Learned:
+
 - systemd services
 - OpenVPN configs
 - credential management
 
-*Details*: [[SSHVPN Setup]]
+_Details_: [[SSHVPN Setup]]
 
 ---
 
@@ -147,10 +159,11 @@ Installed Tailscale for remote access.
 - Could access server from anywhere
 
 This solved:
+
 - dynamic IP issues
 - remote access without port forwarding
 
-*Details*: [[Tailscale Breakthrough]]
+_Details_: [[Tailscale Breakthrough]]
 
 ---
 
@@ -163,15 +176,17 @@ OpenVPN breaks Tailscale
 ```
 
 Observed:
+
 - routing conflicts
 - traffic hijacking
 - Sophos firewall interference
 
 Tried:
+
 - manual route overrides
 - split tunneling
 
-*Details*: [[VPN vs Tailscale]]]
+_Details_: [[VPN vs Tailscale]]]
 
 ---
 
@@ -180,28 +195,34 @@ Tried:
 Tried to implement an advanced setup using network namespaces:
 
 Goal:
+
 ```text
 qBittorrent → VPN only
 everything else → normal network
 ```
 
 Steps:
+
 - created network namespace
 - ran OpenVPN inside it
 - ran qBittorrent inside it
 
 Expected result:
+
 - clean separation of traffic
 - no system-wide VPN interference
 
 Actual Result:
+
 - Didn't work
 - Qbittorrent instance from inside the vpnbox cannot be accessed from outside, so it is stuck inside the box
 
-*Details*: [[vpnBox (DOESN'T WORK)]]
+_Details_: [[vpnBox (DOESN'T WORK)]]
 
 ---
 
 # Phase 11 -- Dashboard!
 
 I am trying to implement a dashboard for my homeserver, as I came across a youtube video on a homelab-ing video that showcased someone vibe-coding a dashboard. Trying to avoid AI as much as possible, I came across Flame.
+
+changes seen?

@@ -1,4 +1,11 @@
+---
+publish: true
+created: 2026-04-30T15:22:34.768+05:30
+modified: 2026-05-18T15:59:04.913+05:30
+---
+
 ## Goal
+
 Download media files efficiently on the server.
 
 ---
@@ -24,11 +31,13 @@ aria2c "magnet:?xt=..."
 ```
 
 Observed:
+
 - command split incorrectly due to `&`
 - multiple background jobs started
 - download did not proceed properly
 
 Errors included:
+
 - DHT routing table issues
 - no peers / no progress
 
@@ -42,6 +51,7 @@ Errors included:
 - no easy UI to monitor progress
 
 Conclusion:
+
 - not suitable for current use
 
 ---
