@@ -1,5 +1,4 @@
 ---
-publish: true
 title: Timeline of my HomeServer Journey
 ---
 
